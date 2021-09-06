@@ -18,7 +18,7 @@ Tg群 t.me/ningmengwj
 
 [rewrite_local]
 
-http://\S+/t555/index.html\St=\S+ url script-request-header http://nm66.top/kjj.js
+http://\S+/t555/index.html\St=\S+ url script-request-header https://raw.githubusercontent.com/nick814/qx/main/kjj.js
 
 hostname = *.kxlock.com,*.kytelnet.com，*.shop
 
@@ -26,7 +26,7 @@ hostname = *.kxlock.com,*.kytelnet.com，*.shop
 
 // [task_local]
  // 
-// 0 */60 12-23 * * http://nm66.top/kjj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
+// 0 */60 12-23 * * https://raw.githubusercontent.com/nick814/qx/main/kjj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
 
 
 

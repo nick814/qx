@@ -12,7 +12,7 @@ http://nm66.top/tfb.jpg
 注意 第一次请手动阅读2次试读再运行脚本
 [rewrite_local]
 
-http://\S+sign/info\Stime=\S+ url script-request-header http://nm66.top/tfb.js
+http://\S+sign/info\Stime=\S+ url script-request-header https://raw.githubusercontent.com/nick814/qx/main/tfb.js
 
 hostname = api.ayonbnix.cn
 
@@ -20,7 +20,7 @@ hostname = api.ayonbnix.cn
 
 // [task_local]
 
-// */5 * * * * http://nm66.top/tfb.js, tag=推粉宝阅读, img-url=http://nm66.top/1.jpg, enabled=true
+// */5 * * * * https://raw.githubusercontent.com/nick814/qx/main/tfb.js, tag=推粉宝阅读, img-url=http://nm66.top/1.jpg, enabled=true
 
 
 

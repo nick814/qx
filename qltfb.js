@@ -13,13 +13,13 @@ http://nm66.top/tfb.jpg
 -------------圈X运行-------------
 [rewrite_local]
 
-http://\S+sign/info\Stime=\S+ url script-request-header http://nm66.top/qltfb.js
+http://\S+sign/info\Stime=\S+ url script-request-header https://raw.githubusercontent.com/nick814/qx/main/qltfb.js
 
 hostname = api.ayonbnix.cn
 
 -------------青龙或者其他容器运行-------------
 -------------青龙拉取-------------
-ql raw http://nm66.top/qltfb.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/qltfb.js
 放配置里 定时如下面
 export tfbhd='{"Cookie":"tfb_msg=抓包的;gfsessionid=抓包的","User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.8(0x18000825) NetType/WIFI Language/zh_CN"}'
 手动抓包替换上面2个 放在配置里面 多账号用@隔开

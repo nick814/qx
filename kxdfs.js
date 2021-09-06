@@ -7,18 +7,18 @@ TG电报群: https://t.me/ningmeng666
 #圈X
 [rewrite_local]
 #柠檬开心大丰收
-https://bp-api.coohua.com/shua-happyharvest/main/page url script-request-header http://nm66.top/kxdfs.js
+https://bp-api.coohua.com/shua-happyharvest/main/page url script-request-header https://raw.githubusercontent.com/nick814/qx/main/kxdfs.js
 [MITM]
 hostname = bp-api.coohua.com
 #loon
-https://bp-api.coohua.com/shua-happyharvest/main/page url script-request-header http://nm66.top/kxdfs.js, requires-body=true, timeout=10, tag=柠檬开心大丰收
+https://bp-api.coohua.com/shua-happyharvest/main/page url script-request-header https://raw.githubusercontent.com/nick814/qx/main/kxdfs.js, requires-body=true, timeout=10, tag=柠檬开心大丰收
 #surge
-柠檬开心大丰收 = type=https://bp-api.coohua.com/shua-happyharvest/main/page,requires-header=1,max-size=0,script-path=http://nm66.top/kxdfs.js,script-update-interval=0
+柠檬开心大丰收 = type=https://bp-api.coohua.com/shua-happyharvest/main/page,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/nick814/qx/main/kxdfs.js,script-update-interval=0
 */
 
 // [task_local]
 
-// */10 * * * * http://nm66.top/kxdfs.js, tag=开心大丰收, img-url=circles.hexagongrid.fill.system, enabled=true
+// */10 * * * * https://raw.githubusercontent.com/nick814/qx/main/kxdfs.js, tag=开心大丰收, img-url=circles.hexagongrid.fill.system, enabled=true
 
 
 const kxdfs = '开心大丰收'

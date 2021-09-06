@@ -16,19 +16,19 @@ http://fhnc-ii-share.xlzxtj.cn/fhnc_ii/share/html/download_share.html?invitation
 
 【黑号专用】别管有没有广告 挂着刷着就行了
 ========青龙===========
-ql raw http://nm66.top/qmdff.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/qmdff.js
 变量为qmdffurl
 export qmdffurl='https://fhnc-ii-game.lw0591.com/ws?param=%7B%22UserID%22%3A这里为替换的UserID%2C%22TokenID%22%3A这里为替换的Token%2C%22MsgID%22%3A3%7D'
 自行抓包替换 关键字为UserID 替换userid和tokenid
 ========isQuanX=========
 [rewrite_local]
-https://fhnc-ii-game.lw0591.com/ws\Sparam=\S+UserID\S+TokenID\S+MsgID\S+Type\S+Diamonds\S+ url script-request-header http://nm66.top/qmdff.js
+https://fhnc-ii-game.lw0591.com/ws\Sparam=\S+UserID\S+TokenID\S+MsgID\S+Type\S+Diamonds\S+ url script-request-header https://raw.githubusercontent.com/nick814/qx/main/qmdff.js
 
 hostname = *.lw0591.com
 */
 
 // [task_local]
-// */5 * * * * http://nm66.top/qmdff.js, tag=柠檬全民大丰收, img-url=http://nm66.top/1.jpg, enabled=true
+// */5 * * * * https://raw.githubusercontent.com/nick814/qx/main/qmdff.js, tag=柠檬全民大丰收, img-url=http://nm66.top/1.jpg, enabled=true
 
 const $ = new Env('柠檬全民大丰收');
 let status;

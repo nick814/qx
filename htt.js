@@ -3,20 +3,20 @@
 http://a13.app.qq.com/o/simple.jsp?pkgname=com.cashtoutiao&ckey=CK1430507080047
 邀请码必填得金币 29629303
 [rewrite_local]
-https://api.cashtoutiao.com/frontend/sign/record\S+ url script-request-body http://47.101.146.160/scripts/htt.js
+https://api.cashtoutiao.com/frontend/sign/record\S+ url script-request-body https://raw.githubusercontent.com/nick814/qx/main/htt.js
 
 hostname = api.cashtoutiao.com
 ##点任务获取数据##
 ===========ql===========
 拉取
-ql raw http://47.101.146.160/scripts/htt.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/htt.js
 变量
 export htthd='{"loginId":"替换的","userId":替换的}'
 
 多账号用@隔开
 */
 // [task_local]
-// */60 * * * * http://47.101.146.160/scripts/htt.js, tag=惠头条, img-url=circles.hexagongrid.fill.system, enabled=true
+// */60 * * * * https://raw.githubusercontent.com/nick814/qx/main/htt.js, tag=惠头条, img-url=circles.hexagongrid.fill.system, enabled=true
 
 const $ = new Env('惠头条');
 let status;

@@ -6,17 +6,17 @@
 -------------圈X运行-------------
 [rewrite_local]
 #柠檬电视家
-http://user.gaoqingdianshi.com/api/v3/user/info url script-request-header http://nm66.top/dsj.js
+http://user.gaoqingdianshi.com/api/v3/user/info url script-request-header https://raw.githubusercontent.com/nick814/qx/main/dsj.js
 [MITM]
 hostname = bp-api.coohua.com
 #loon
-http://user.gaoqingdianshi.com/api/v3/user/info url script-request-header http://nm66.top/dsj.js, requires-header=true, timeout=10, tag=柠檬电视家
+http://user.gaoqingdianshi.com/api/v3/user/info url script-request-header https://raw.githubusercontent.com/nick814/qx/main/dsj.js, requires-header=true, timeout=10, tag=柠檬电视家
 #surge
-柠檬电视家 = type=http://user.gaoqingdianshi.com/api/v3/user/info,requires-header=1,max-size=0,script-path=http://nm66.top/dsj.js,script-update-interval=0
+柠檬电视家 = type=http://user.gaoqingdianshi.com/api/v3/user/info,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/nick814/qx/main/dsj.js,script-update-interval=0
 
 -------------青龙或者其他容器运行-------------
 -------------青龙拉取-------------
-ql raw http://nm66.top/dsj.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/dsj.js
 放配置里 定时如下面 抓包查看请求头里 或者随便一条带有accesskey的
 export dsj='{"Accept-Encoding":"gzip, deflate","AppVerCode":"236","userid":"抓包替换的","language":"zh_CN","Host":"user.gaoqingdianshi.com","AppVerName":"1.96","hwModel":"iPhone 7 Plus","hwBrand":"iPhone","countryCode":"CN","ssid":"","Connection":"keep-alive","uuid":"512dc360f78bc194","Cache-Control":"no-cache","ispId":"","Accept-Language":"zh-Hans;q=1","User-Agent":"Dsj/Client1.2","MarketChannelName":"Iphone","hwMac":"","Generation":"com.dianshijia.mobile.ios","Authorization":"抓包替换的","appId":"19227f89ea1a166451593601eb8a1b4f","cityCode":"421200","erid":"71698","routerMac":"1ca0d3b01e4","ethMac":"","areaCode":"420000","cuuid":"c0073ed2c7e2b94fa19603874b32a054","gpsCityCode":"421200"}'
 
@@ -32,7 +32,7 @@ http://nm66.top/nm.boxjs.json
 
 // [task_local]
 //#柠檬电视家
-// * */1 * * * http://nm66.top/dsj.js, tag=柠檬电视家, enabled=true
+// * */1 * * * https://raw.githubusercontent.com/nick814/qx/main/dsj.js, tag=柠檬电视家, enabled=true
 
 const $ = new Env('柠檬电视家');
 let status;
