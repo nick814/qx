@@ -6,17 +6,17 @@
 -------------圈X运行-------------
 [rewrite_local]
 #柠檬爷爷的小农院
-https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData url script-request-header http://nm66.top/yydxny.js
+https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData url script-request-header https://raw.githubusercontent.com/nick814/qx/main/yydxny.js
 [MITM]
 hostname = bp-api.coohua.com
 #loon
-https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData url script-request-header http://nm66.top/yydxny.js, requires-header=true, timeout=10, tag=柠檬爷爷的小农院
+https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData url script-request-header https://raw.githubusercontent.com/nick814/qx/main/yydxny.js, requires-header=true, timeout=10, tag=柠檬爷爷的小农院
 #surge
-柠檬爷爷的小农院 = type=https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData,requires-header=1,max-size=0,script-path=http://nm66.top/yydxny.js,script-update-interval=0
+柠檬爷爷的小农院 = type=https://bp-api.coohua.com/bubuduo-yydxny/sync/syncData,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/nick814/qx/main/yydxny.js,script-update-interval=0
 
 -------------青龙或者其他容器运行-------------
 -------------青龙拉取-------------
-ql raw http://nm66.top/yydxny.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/yydxny.js
 放配置里 定时如下面 抓包查看请求头里 或者随便一条带有accesskey的
 export yyxnyhd='{"bs":"CDMA","osVersion":"iOS 14.30","pkgId":"313","Host":"bp-api.coohua.com","Accept-Encoding":"gzip, deflate, br","deviceId":"0","gps":"default","brand":"Apple","channel":"AppStore","Connection":"keep-alive","Cache-Control":"no-cache","accessKey":"抓包替换的","hotVersion":"2.91","appVersion":"1.0.4","User-Agent":"ygzy-mobile/1 CFNetwork/1209 Darwin/20.2.0","os":"iOS","Accept-Language":"zh-cn","romVersion":"iOS 14.30","Content-Type":"application/json","oaid":"","currentChannel":"AppStore","blackBox":"","Content-Length":"487","wechatId":""}'
 
@@ -31,7 +31,7 @@ http://nm66.top/nm.boxjs.json
 
 // [task_local]
 //#柠檬爷爷的小农院
-// */10 * * * * http://nm66.top/yydxny.js, tag=柠檬爷爷的小农院, enabled=true
+// */10 * * * * https://raw.githubusercontent.com/nick814/qx/main/yydxny.js, tag=柠檬爷爷的小农院, enabled=true
 const $ = new Env('柠檬爷爷的小农院');
 let status;
 status = (status = ($.getval("yyxnystatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符

@@ -12,14 +12,14 @@ Tg群 t.me/ningmengwj
 号多的可以多撸 一定要先绑定微信和手机号脚本好提现
 请先绑定好微信和手机号
 [rewrite_local]
-https://api.yundongfu.mobi/v1/user/dailyData url script-request-header http://nm66.top/ydf.js
+https://api.yundongfu.mobi/v1/user/dailyData url script-request-header https://raw.githubusercontent.com/nick814/qx/main/ydf.js
 
 hostname = *.yundongfu.mobi
 */
 
 // [task_local]
 // 只需要一天运行一次就行了 分两天 已定时每天晚上12点运行 第一次可以自己手动运行先领取0.3
-// 0 0 * * * http://nm66.top/ydf.js, tag=柠檬运动福极速版, img-url=circles.hexagongrid.fill.system, enabled=true
+// 0 0 * * * https://raw.githubusercontent.com/nick814/qx/main/ydf.js, tag=柠檬运动福极速版, img-url=circles.hexagongrid.fill.system, enabled=true
 
 const ydf = '运动福极速版'
 const $ = Env('运动福极速版')

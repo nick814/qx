@@ -9,7 +9,7 @@ APP商店 九章头条
 一天预算2块的样子 
 邀请的别邀请多了容易封号
 ========青龙===========
-ql raw http://nm66.top/jzread.js
+ql raw https://raw.githubusercontent.com/nick814/qx/main/jzread.js
 变量为jzreadurl多账号用@隔开
 export jzreadurl='https://api.st615.com/v1/user/info?token=抓包的token'
 自行抓包替换 关键字为token 抓包的token
@@ -19,13 +19,13 @@ export jzreadurl='https://api.st615.com/v1/user/info?token=抓包的token'
 
 ========isQuanX=========
 [rewrite_local]
-https://api.st615.com/v1/user/info\?token=\S+ url script-request-header http://nm66.top/jzread.js
+https://api.st615.com/v1/user/info\?token=\S+ url script-request-header https://raw.githubusercontent.com/nick814/qx/main/jzread.js
 
 hostname = api.st615.com
 */
 
 // [task_local]
-// */60 * * * * http://nm66.top/jzread.js, tag=柠檬九章头条, img-url=circles.hexagongrid.fill.system, enabled=true
+// */60 * * * * https://raw.githubusercontent.com/nick814/qx/main/jzread.js, tag=柠檬九章头条, img-url=circles.hexagongrid.fill.system, enabled=true
 
 const $ = new Env('柠檬九章头条');
 let status;
